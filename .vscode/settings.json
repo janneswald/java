@@ -1,5 +1,9 @@
 {
     "files.autoSave": "onFocusChange",
     "workbench.colorTheme": "Visual Studio Dark",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
 }
