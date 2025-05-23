@@ -1,4 +1,5 @@
 package Fahrzeug;
+
 // Ziel: Du entwickelst ein kleines Programm mit einer Elternklasse „Fahrzeug“ und zwei abgeleiteten Klassen, z. B. „Auto“ und „Fahrrad“.
 
 public abstract class Fahrzeug {
@@ -19,8 +20,18 @@ public abstract class Fahrzeug {
     public String toString() {
         return marke + baujahr;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Fahrzeug)) return false;
+        Fahrzeug other = (Fahrzeug) obj;
+        return this.marke.equals(other.marke) && this.baujahr == other.baujahr;
+        
+    }
+    
 
     }
+
 
 
 
